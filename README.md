@@ -1,19 +1,15 @@
 <h1 align="center">YWrt</h1>
 
-
-
 <p align="center">
   <strong>YWrt 是一个为科学上网精心定制的路由系统，基于 ImmortalWrt 二次编译。</strong><br>
   简洁 · 稳定 · 高效
 </p>
-
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-OpenWrt-informational?style=flat-square" alt="Platform">
   <img src="https://img.shields.io/github/license/YUAXI/YWrt?style=flat-square" alt="License">
   <img src="https://img.shields.io/github/stars/YUAXI/YWrt?style=flat-square" alt="Stars">
 </p>
-
 
 ---
 
@@ -24,25 +20,23 @@
 
 ---
 
+### ⚠️ Tips:
 
+1. [Releases](https://github.com/YUAXI/YWrt/releases) 中有编译好的 x86 镜像文件，如果你也是 x86 架构的机器且没有太多需求，那么可以直接下载使用，重新编译将花费你大量时间。
 
-### ⚠️tips:
+2. 推荐使用 Ubuntu、Debian 进行编译，本人使用的是 Ubuntu-24.04.2-server。
 
-1.[Releases](https://github.com/YUAXI/YWrt/releases)中有编译好的x86镜像文件，如果你也是x86架构的机器且没有太多需求，那么可以直接下载使用，重新编译将花费你大量时间。
+3. 切勿使用 root 用户编译，创建一个新的用户且确保源码所在的文件夹及内部的文件都属于这个新的用户。参考命令: `sudo chown -R yuaxi:yuaxi YWrt` （将 “yuaxi” 替换为你编译时用到的用户名）
 
-2.推荐使用Ubuntu、Debain进行编译，本人使用的是Ubuntu-24.04.2-server。
+4. 国内用户编译前需备好梯子，代理模式最好开全局，否则将有很大概率导致编译失败。
 
-3.切勿使用root用户编译，创建一个新的用户且确保源码所在的文件夹及内部的文件都输入这个新的用户参考命令: `sudo chown -R yuaxi:yuaxi YWrt` 将“yuaxi”替换为你编译时用到的用户名
-
-4.国内用户编译前需备好梯子，代理模式最好开全局，否则将有很大概率导致编译失败。
-
-
+---
 
 ## 🚀 开始编译
 
 ### 1. 安装依赖
 
-**Debian/Ubuntu ：**
+**Debian/Ubuntu：**
 
 ```bash
 sudo apt update -y
@@ -57,15 +51,15 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
   upx-ucl unzip vim wget xmlto xxd zlib1g-dev zstd
 ```
 
-### 2. 克隆源码
+### 2.克隆源码
 
 执行 `git clone https://github.com/YUAXI/YWrt.git` 克隆仓库
 
-执行 `cd Ywrt`  进入文件夹
+执行 `cd Ywrt` 进入文件夹
 
 执行 `./scripts/feeds update -a` 获取最新软件包
 
-执行 `./scripts/feeds install -a` 将软件安装到package/feeds/ 目录中
+执行 `./scripts/feeds install -a` 将软件安装到 package/feeds/ 目录中
 
 执行 `make menuconfig` 配置固件
 
@@ -75,5 +69,14 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
 
 ### 3.获取固件
 
-生成固件存放路径: `bin/targets`
+生成固件存放路径：bin/targets
 
+
+---
+
+## 📄 License / 开源许可说明
+
+本项目 YWrt 基于开源项目 ImmortalWrt 构建，遵循 GNU 通用公共许可证第 2 版（GPL-2.0-only） 协议进行发布。
+由 YUAXI 所做的所有修改和功能扩展，同样遵循该开源协议。
+
+---
