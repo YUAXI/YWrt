@@ -57,13 +57,19 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
 
 ### 2. 克隆源码
 
-1.执行 `git clone https://github.com/YUAXI/YWrt.git` 克隆仓库
-2.执行 `cd Ywrt`  进入文件夹
-3.执行 `./scripts/feeds update -a` 获取最新软件包
-4.执行 `./scripts/feeds install -a` 将软件安装到package/feeds/ 目录中
-5.执行 `make menuconfig` 配置固件
-6.执行 `make download -j$(nproc) V=s` 下载所需依赖
-7.执行 `make -j$(nproc) V=s` 开始编译
+执行 `git clone https://github.com/YUAXI/YWrt.git` 克隆仓库
+
+执行 `cd Ywrt`  进入文件夹
+
+执行 `./scripts/feeds update -a` 获取最新软件包
+
+执行 `./scripts/feeds install -a` 将软件安装到package/feeds/ 目录中
+
+执行 `make menuconfig` 配置固件
+
+执行 `make download -j$(nproc) V=s` 下载所需依赖
+
+执行 `make -j$(nproc) V=s` 开始编译
 
 ### 3.获取固件
 
