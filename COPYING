@@ -1,12 +1,26 @@
-ImmortalWrt is provided under:
+YWrt - Based on ImmortalWrt
+=============================
 
-	SPDX-License-Identifier: GPL-2.0-only
+This project is licensed under the GNU General Public License v2.0 only (GPL-2.0-only).
 
-Being under the terms of the GNU General Public License version 2 only,
-according with:
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2
+as published by the Free Software Foundation.
 
-	LICENSES/GPL-2.0
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-In addition, other licenses may also apply.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.
 
-All contributions to ImmortalWrt are subject to this COPYING file.
+---
+
+This project is based on [ImmortalWrt](https://github.com/immortalwrt/immortalwrt),
+which is licensed under the GNU General Public License v2.0.
+
+Modifications and customizations © 2025 YUAXI <yuaxi0806@gmail.com>
+Licensed under the same license: GPL-2.0-only.
